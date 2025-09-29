@@ -75,7 +75,8 @@ window_fermer.grid(row=0, column=4, ipadx=5, ipady=5, pady=0, padx=0)
 
 class_label = ctk.CTkLabel(window_fermer, text="Fermer", font=("Arial", 20))
 class_label.pack(pady=15, padx=15)
-
+shazler_label = ctk.CTkLabel(frame, text="Shazler", font=("Arial", 80), text_color="#7C3AED")
+shazler_label.grid(row=1, column=2, ipadx=0, ipady=0, pady=0, padx=0)
 # odoo14
 path_odoo_14 = '/home/mahjoub/Documents/odoo_source/odoo_14'
 path_odoo_15 = '/home/mahjoub/Documents/odoo_source/odoo_15'
@@ -83,98 +84,98 @@ path_odoo_16 = '/home/mahjoub/Documents/odoo_source/odoo_16'
 path_odoo_16_4 = '/home/mahjoub/Documents/odoo_source/odoo16_4'
 path_odoo_17 = '/home/mahjoub/Documents/odoo_source/odoo_17'
 
-button = ctk.CTkButton(
-    window_14,
-    text='ahts',
-    command=lambda: fonction(path_odoo_14 + '/odoo.conf', "ahts", "ahts"))
-button.pack(pady=15, padx=15)
-
-button = ctk.CTkButton(
-    window_14,
-    text='curachap',
-    command=lambda: fonction(path_odoo_14 + '/odoo.conf', "curachap", "curachap"))
-button.pack(pady=15, padx=15)
-
-# odoo15
-
-button = ctk.CTkButton(
-    window_15,
-    text='CED',
-    command=lambda: fonction(path_odoo_15 + '/odoo.conf', "ced", "ced"))
-button.pack(pady=15, padx=15)
-
-button = ctk.CTkButton(
-    window_15,
-    text='Giz',
-    command=lambda: fonction(path_odoo_15 + '/odoo.conf', "giz", "giz"))
-button.pack(pady=15, padx=15)
-
-button = ctk.CTkButton(
-    window_15,
-    text='Stars Airlines',
-    command=lambda: fonction(path_odoo_15 + '/odoo.conf', "Stars-Airlines", "Stars-Airlines"))
-button.pack(pady=15, padx=15)
-
-button = ctk.CTkButton(
-    window_15,
-    text='darellamma',
-    command=lambda: fonction(path_odoo_15 + '/odoo.conf', "darellamma", "darellamma"))
-button.pack(pady=15, padx=15)
-button = ctk.CTkButton(
-    window_15,
-    text='Siala',
-    command=lambda: fonction(path_odoo_15 + '/odoo.conf', "siela", "siela"))
-button.pack(pady=15, padx=15)
-
-button = ctk.CTkButton(
-    window_15,
-    text='ced',
-    command=lambda: fonction(path_odoo_15 + '/odoo.conf', "ced_v15_new", "ced"))
-button.pack(pady=15, padx=15)
-
-button = ctk.CTkButton(
-    window_15,
-    text='silosun',
-    command=lambda: fonction(path_odoo_15 + '/odoo.conf', "silosun", "silosun"))
-button.pack(pady=15, padx=15)
-
-# odoo16
-button = ctk.CTkButton(
-    window_16,
-    text='Bako',
-    command=lambda: fonction(path_odoo_16 + '/odoo.conf', "bkov7", "bako"))
-button.pack(pady=15, padx=15)
-
-# odoo17
-button = ctk.CTkButton(
-    window_17,
-    text='IMC',
-    command=lambda: fonction(path_odoo_17 + '/odoo.conf', "imc", "imc"))
-button.pack(pady=15, padx=15)
-
-button = ctk.CTkButton(
-    window_17,
-    text='VBIndustrie',
-    command=lambda: fonction(path_odoo_17 + '/odoo.conf', "vbinsdutrie_V_17", "vbinsdutrie_V_17"))
-button.pack(pady=15, padx=15)
-
-button = ctk.CTkButton(
-    window_17,
-    text='Tritux',
-    command=lambda: fonction(path_odoo_17 + '/odoo.conf', "tritux-v17", "tritux-v17"))
-button.pack(pady=15, padx=15)
-
-button = ctk.CTkButton(
-    window_17,
-    text='Inspark',
-    command=lambda: fonction(path_odoo_17 + '/odoo.conf', "inspark_v_17", "inspark_v_17"))
-button.pack(pady=15, padx=15)
-
-button = ctk.CTkButton(
-    window_17,
-    text='Convergen',
-    command=lambda: fonction(path_odoo_17 + '/odoo.conf', "convergen_agency_v17", "convergen_agency_v17"))
-button.pack(pady=15, padx=15)
+# button = ctk.CTkButton(
+#     window_14,
+#     text='ahts',
+#     command=lambda: fonction(path_odoo_14 + '/odoo.conf', "ahts", "ahts"))
+# button.pack(pady=15, padx=15)
+#
+# button = ctk.CTkButton(
+#     window_14,
+#     text='curachap',
+#     command=lambda: fonction(path_odoo_14 + '/odoo.conf', "curachap", "curachap"))
+# button.pack(pady=15, padx=15)
+#
+# # odoo15
+#
+# button = ctk.CTkButton(
+#     window_15,
+#     text='CED',
+#     command=lambda: fonction(path_odoo_15 + '/odoo.conf', "ced", "ced"))
+# button.pack(pady=15, padx=15)
+#
+# button = ctk.CTkButton(
+#     window_15,
+#     text='Giz',
+#     command=lambda: fonction(path_odoo_15 + '/odoo.conf', "giz", "giz"))
+# button.pack(pady=15, padx=15)
+#
+# button = ctk.CTkButton(
+#     window_15,
+#     text='Stars Airlines',
+#     command=lambda: fonction(path_odoo_15 + '/odoo.conf', "Stars-Airlines", "Stars-Airlines"))
+# button.pack(pady=15, padx=15)
+#
+# button = ctk.CTkButton(
+#     window_15,
+#     text='darellamma',
+#     command=lambda: fonction(path_odoo_15 + '/odoo.conf', "darellamma", "darellamma"))
+# button.pack(pady=15, padx=15)
+# button = ctk.CTkButton(
+#     window_15,
+#     text='Siala',
+#     command=lambda: fonction(path_odoo_15 + '/odoo.conf', "siela", "siela"))
+# button.pack(pady=15, padx=15)
+#
+# button = ctk.CTkButton(
+#     window_15,
+#     text='ced',
+#     command=lambda: fonction(path_odoo_15 + '/odoo.conf', "ced_v15_new", "ced"))
+# button.pack(pady=15, padx=15)
+#
+# button = ctk.CTkButton(
+#     window_15,
+#     text='silosun',
+#     command=lambda: fonction(path_odoo_15 + '/odoo.conf', "silosun", "silosun"))
+# button.pack(pady=15, padx=15)
+#
+# # odoo16
+# button = ctk.CTkButton(
+#     window_16,
+#     text='Bako',
+#     command=lambda: fonction(path_odoo_16 + '/odoo.conf', "bkov7", "bako"))
+# button.pack(pady=15, padx=15)
+#
+# # odoo17
+# button = ctk.CTkButton(
+#     window_17,
+#     text='IMC',
+#     command=lambda: fonction(path_odoo_17 + '/odoo.conf', "imc", "imc"))
+# button.pack(pady=15, padx=15)
+#
+# button = ctk.CTkButton(
+#     window_17,
+#     text='VBIndustrie',
+#     command=lambda: fonction(path_odoo_17 + '/odoo.conf', "vbinsdutrie_V_17", "vbinsdutrie_V_17"))
+# button.pack(pady=15, padx=15)
+#
+# button = ctk.CTkButton(
+#     window_17,
+#     text='Tritux',
+#     command=lambda: fonction(path_odoo_17 + '/odoo.conf', "tritux-v17", "tritux-v17"))
+# button.pack(pady=15, padx=15)
+#
+# button = ctk.CTkButton(
+#     window_17,
+#     text='Inspark',
+#     command=lambda: fonction(path_odoo_17 + '/odoo.conf', "inspark_v_17", "inspark_v_17"))
+# button.pack(pady=15, padx=15)
+#
+# button = ctk.CTkButton(
+#     window_17,
+#     text='Convergen',
+#     command=lambda: fonction(path_odoo_17 + '/odoo.conf', "convergen_agency_v17", "convergen_agency_v17"))
+# button.pack(pady=15, padx=15)
 
 
 def fermer_interface():
@@ -187,6 +188,32 @@ button_fermer = ctk.CTkButton(
     command=fermer_interface)
 button_fermer.pack(pady=15, padx=15)
 
+IMAGE_FOLDER = "/home/mahjoub/Bureau/Mahjoub/écran"
+
+def change_wallpaper():
+    if not os.path.isdir(IMAGE_FOLDER):
+        messagebox.showerror("Erreur", f"Dossier non trouvé : {IMAGE_FOLDER}")
+        return
+
+    images = [f for f in os.listdir(IMAGE_FOLDER) if f.lower().endswith(('.jpg', '.png', '.jpeg'))]
+    if not images:
+        messagebox.showinfo("Aucune image", "Aucune image trouvée dans le dossier.")
+        return
+
+    random_image = random.choice(images)
+    image_path = os.path.join(IMAGE_FOLDER, random_image)
+    uri = f"file://{image_path}"
+
+    # Changer le fond d'écran avec gsettings
+    subprocess.run(["gsettings", "set", "org.gnome.desktop.background", "picture-uri", uri])
+    subprocess.run(["gsettings", "set", "org.gnome.desktop.screensaver", "picture-uri", uri])
+    messagebox.showinfo("Succès", f"Fond d'écran changé : {random_image}")
+
+
+
+
+
+
 # version
 
 window_dif = ctk.CTkFrame(frame)
@@ -195,8 +222,8 @@ window_dif.grid(row=2, column=1, ipadx=50, ipady=30, pady=50, padx=50)
 class_label = ctk.CTkLabel(window_dif, text="Version", font=("Arial", 20))
 class_label.pack(pady=15, padx=15)
 
-version = ctk.CTkComboBox(master=window_dif,
-                          values=["odoo_14", "odoo_15", "odoo_16", "odoo_16_4", "odoo_17"])
+version = ctk.CTkOptionMenu(master=window_dif,
+                          values=["odoo_14", "odoo_15", "odoo_16", "odoo_16_4", "odoo_17","odoo17_","odoo_18"])
 version.pack(padx=20, pady=10)
 
 # Project
@@ -248,12 +275,16 @@ base.pack(padx=20, pady=10)
 window_dif = ctk.CTkFrame(frame)
 window_dif.grid(row=2, column=0, ipadx=30, ipady=30, pady=30, padx=30)
 
-checkbox = ctk.CTkCheckBox(master=window_dif, text="Communautaire",
+checkbox_communautaire = ctk.CTkCheckBox(master=window_dif, text="Communautaire",
                            onvalue="on", offvalue="off")
-checkbox.pack(padx=10, pady=20)
+checkbox_communautaire.pack(padx=10, pady=20)
+
+checkbox_enterprise = ctk.CTkCheckBox(master=window_dif, text="enterprise",
+                           onvalue="on", offvalue="off")
+checkbox_enterprise.pack(padx=10, pady=20)
 
 
-def generer_nom_base_de_donnee(project, base, version, communautaire):
+def generer_nom_base_de_donnee(project, base, version, communautaire,enterprise):
     from datetime import datetime
     file_num_port = "/home/mahjoub/Documents/local"
     liste_project = [item for item in os.listdir(file_num_port) if os.path.isdir(os.path.join(file_num_port, item))]
@@ -269,13 +300,13 @@ def generer_nom_base_de_donnee(project, base, version, communautaire):
                    "base_" + project + "_" + datetime.now().strftime('%d_%B_%H_%M'))  # insert at line 0 character 0
 
 
-def run(project, base, version, communautaire):
+def run(project, base, version, communautaire,enterprise):
     from datetime import datetime
     file_num_port = "/home/mahjoub/Documents/local"
     liste_project = [item for item in os.listdir(file_num_port) if os.path.isdir(os.path.join(file_num_port, item))]
     port = 8060
 
-    textbox_module.delete("0.0", "end")
+    # textbox_module.delete("0.0", "end")
     textbox.delete("0.0", "end")
     textbox_ip.delete("0.0", "end")
 
@@ -291,26 +322,24 @@ def run(project, base, version, communautaire):
                     if "addons_path" in line:
                         test = line.split("/")
                         for rex in test:
-                            if rex == "enterprise," or rex == "entreprise,":
-                                try:
-                                    pp = line.replace("enterprise,", "odoo,")
+                            if rex == "enterprise," :
+                                    pp = line.replace("enterprise,", "odoo/addons,")
                                     pp = pp.replace(test[-1], project + "\n")
                                     file.write(pp)
                                     break
-
-                                except:
-                                    pp = line.replace("entreprise,", "odoo,")
-                                    pp = pp.replace(test[-1], project + "\n")
-                                    file.write(pp)
-                                    break
-                else:
+                elif enterprise == "on":
                     test = line.split("/")
                     for rex in test:
-                        if rex == "odoo,":
-                            pp = line.replace("odoo,", "enterprise,")
+                        if rex == "addons,":
+                            pp = line.replace("odoo/addons,", "enterprise,")
                             pp = pp.replace(test[-1], project + "\n")
                             file.write(pp)
                             break
+                else :
+                    test = line.split("/")
+                    pp = line.replace(test[-1], project + "\n")
+                    file.write(pp)
+
 
 
             # if "addons_path" in line:
@@ -353,8 +382,7 @@ def run(project, base, version, communautaire):
 button = ctk.CTkButton(
     window_dif,
     text='Run',
-    command=lambda: run(project.get(), base.get(), version.get()
-                        , checkbox.get()
+    command=lambda: run(project.get(), base.get(), version.get(),checkbox_communautaire.get(),checkbox_enterprise.get()
                         ))
 button.pack(pady=10, padx=10)
 
@@ -362,7 +390,7 @@ button = ctk.CTkButton(
     window_dif,
     text='Generer Nom BD',
     command=lambda: generer_nom_base_de_donnee(project.get(), base.get(), version.get()
-                                               , checkbox.get()
+                                               , checkbox_enterprise.get(),checkbox_communautaire.get(),
                                                ))
 button.pack(pady=40, padx=10)
 window_dif = ctk.CTkFrame(frame)
@@ -390,7 +418,37 @@ textbox = ctk.CTkTextbox(class_label, width=400, height=50, )
 textbox.grid()
 textbox_ip = ctk.CTkTextbox(class_label_ip, width=400, height=50, )
 textbox_ip.grid()
-CTkScrollableDropdown(project, values=liste_dossiers_sorted, height=270, width=240, resize=False, 
+CTkScrollableDropdown(project, values=liste_dossiers_sorted, height=270, width=240, resize=False,
                       justify="left", button_color="transparent", autocomplete=True)
 
 frame.mainloop()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

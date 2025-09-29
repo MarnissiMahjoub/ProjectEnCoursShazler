@@ -1,5 +1,3 @@
-# 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
-# mahjoubmarnissi
 # ProjetActif
 import sys
 
@@ -422,33 +420,3 @@ CTkScrollableDropdown(project, values=liste_dossiers_sorted, height=270, width=2
                       justify="left", button_color="transparent", autocomplete=True)
 
 frame.mainloop()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
